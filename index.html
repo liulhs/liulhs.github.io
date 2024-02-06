@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<style>
-	body{
-		background-image: url("Capture.PNG");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-attachment: fixed;
-		background-size: cover;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-TA Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<p>
-</p>
+    <div class="container">
+        <header>
+            <h1>Welcome to E-TA</h1>
+            <p>Your AI-powered assistant</p>
+        </header>
+        <main>
+            <section class="chatbot">
+                <div class="chat-window">
+                    <div class="messages"></div>
+                    <textarea class="message-input" placeholder="Type your message here..."></textarea>
+                    <button class="send-button">Send</button>
+                </div>
+                <div class="upload-area">
+                    <label for="file-upload" class="upload-button">
+                        Upload Document
+                        <input type="file" id="file-upload" name="file-upload" hidden>
+                    </label>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at <a href="mailto:support@eta.com">support@eta.com</a></p>
+        </footer>
+    </div>
 </body>
 </html>
